@@ -1,0 +1,20 @@
+{
+    "name": "oslynx/framework-t3",
+    "description": "framework training 3",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Core\\": "core/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oslynx",
+            "email": "malakayalvg@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
