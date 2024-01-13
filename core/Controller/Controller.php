@@ -19,10 +19,10 @@ abstract class Controller
         return $this->response->redirect($route);
     }
 
-    public function render($nomDeTemplate,$donnees)
+    public function render($nomDeTemplate,$donnees): Response
     {
-        echo "Controller : render()";
-        echo "<br>";
+//        echo "Controller : render()";
+//        echo "<br>";
         return $this->response->render($nomDeTemplate,$donnees);
     }
 }

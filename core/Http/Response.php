@@ -7,8 +7,8 @@ class Response
 {
     public function render($nomDeTemplate,$donnees)
     {
-        echo "View::render";
-        echo "<br>";
+//        echo "View::render";
+//        echo "<br>";
         View::render($nomDeTemplate,$donnees);
 
         return $this;

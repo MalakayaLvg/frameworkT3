@@ -7,8 +7,8 @@ class Kernel
 {
     public static function run()
     {
-        echo "Debugger::run()";
-        echo "<br>";
+//        echo "Debugger::run()";
+//        echo "<br>";
         Debugger::run();
 
         $type = "home";
@@ -23,16 +23,12 @@ class Kernel
             $action = $_GET['action'];
         }
 
-//        $type = ucfirst($type);
-//        $controllerName = "App\Controller\\".$type."Controller";
-//
-//        $controller = new $controllerName();
-//        $controller->$action();
-//        var_dump($controller->$action);
-        $controller = new HomeController();
-        echo "controller->index()";
-        echo "<br>";
-        $controller->index();
+        $type = ucfirst($type);
+        $controllerName = "App\Controller\\".$type."Controller";
+
+        $controller = new $controllerName();
+        $controller->$action();
+
 
 
     }
